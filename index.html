@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+</head>
+<body>
+    <h2>House Price Prediction</h2>
+    <form action="/predict" method="post">
+        <input type="number" name="size" placeholder="House Size (sqm)" required><br><br>
+        <input type="number" name="rooms" placeholder="Number of Rooms" required><br><br>
+        <button type="submit">Predict Price</button>
+    </form>
+    <h3>{{ prediction }}</h3>
+</body>
+</html>
